@@ -16,7 +16,7 @@ public class ContactsController {
 	@Autowired
 	ContactRepository repository;
 
-	@GetMapping("/contacts")
+	@GetMapping("/contact")
 	public String getContacts(Model model) {
 		Iterable<Contact> contacts = repository.findAll();
 		model.addAttribute("contactList", contacts);

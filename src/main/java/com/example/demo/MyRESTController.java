@@ -21,18 +21,18 @@ public class MyRESTController {
 		return repository.findAll();
 	}
 
-	@PostMapping("/save")
-	public ResponseEntity<String> insert(@RequestBody Contact contact) {
-		repository.save(contact);
-		return new ResponseEntity<String>("Created", HttpStatus.OK);
-
-	}
-
-	@DeleteMapping("/delete/{id}")
-	public ResponseEntity<String> insert(@PathVariable int id) {
-		repository.deleteById(id);
-		return new ResponseEntity<String>("Deleted", HttpStatus.OK);
-
-	}
+//	@PostMapping("/save")
+//	public ResponseEntity<String> insert(@RequestBody Contact contact) {
+//		repository.save(contact);
+//		return new ResponseEntity<String>("Created", HttpStatus.OK);
+//
+//	}
+//
+//	@DeleteMapping("/delete/{id}")
+//	public ResponseEntity<String> insert(@PathVariable int id) {
+//		repository.deleteById(id);
+//		return new ResponseEntity<String>("Deleted", HttpStatus.OK);
+//
+//	}
 
 }
