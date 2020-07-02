@@ -15,5 +15,6 @@
 			<td>Employee Pass: <c:out value="${contacts.name}" /></td>
 		</tr>
 	</c:forEach>
+	<a href="/save">CreateContacts</a>
 </body>
 </html>
